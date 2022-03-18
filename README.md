@@ -173,7 +173,7 @@ One important thing to note is that a <Route path> matches the beginning of the 
 
 
 
-
+![image-20220318160040286](./src/img/image-20220318160040286.png)
 
 - Navigation-route changer: `<Link>`， `NavLink`, `Redirect`
 
