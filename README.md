@@ -1,4 +1,6 @@
 ### 注意本demo使用的版本为"react-router-dom": "5"
+- https://v5.reactrouter.com/web/example/url-params 
+- 跟着文档慢慢来啃吧
 ### 基本路由
 几个核心组件
 - BrowserRouter (一般会重命名为Router)
