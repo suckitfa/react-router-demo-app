@@ -70,3 +70,23 @@ export default BasicRoute;
 也就是说路由的在Switch中的顺序很重要,他会遍历其子元素，匹配到就停止了。当你跳转到`/home`或者`/user`的时候，会命中`/`。 出现如下的效果：
 
 ![image-20220318111753957](./src/img/image-20220318111753957.png)
+
+### 嵌套路由
+
+```js
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch
+} from 'react-router-dom'
+
+function NestRoute() {
+  return(
+  )
+}
+```
+
+
+
+![image-20220318133649690](./src/img/image-20220318133649690.png)
