@@ -7,6 +7,31 @@
 - Switch
 ```jsx
 import {BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom'
+function BasicRoute() {
+  	return(
+      <Router>
+        <nav>
+          <ul>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/user">User</Link></li>
+            <li><Link to="/">Home</Link></li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/user">
+            <User />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    )
+}
+export default BasicRoute;
 ```
 
 
