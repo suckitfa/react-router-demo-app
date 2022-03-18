@@ -71,6 +71,15 @@ export default BasicRoute;
 
 ![image-20220318111753957](./src/img/image-20220318111753957.png)
 
+如何解决？	
+
+```js
+Because of this, we typically put this <Route> last in our <Switch>. Another possible solution is to use <Route exact path="/"> which does match the entire URL.
+```
+
+1. 配置路由的时候，越具体的放在前面
+2. 使用 `exact`开启精确的匹配。
+
 ### 嵌套路由
 
 ```js
@@ -156,8 +165,24 @@ ReactDOM.render(
 When a <Switch> is rendered, it searches through its children <Route> elements to find one whose path matches the current URL. When it finds one, it renders that <Route> and ignores all others. This means that you should put <Route>s with more specific (typically longer) paths before less-specific ones.
 ```
 
+- 使用 exact属性来避免坑，这一意味着对整条路径进行匹配。
+
+```js
+One important thing to note is that a <Route path> matches the beginning of the URL, not the whole thing. So a <Route path="/"> will always match the URL. Because of this, we typically put this <Route> last in our <Switch>. Another possible solution is to use <Route exact path="/"> which does match the entire URL.
+```
+
 
 
 
 
 - Navigation-route changer: `<Link>`， `NavLink`, `Redirect`
+
+1. Link: 实际上渲染的是a标签
+2. NavLink ???
+3. Redirect 使用to属性来设置路径，进行重定向（强制跳转）??
+
+```js
+Any time that you want to force navigation, you can render a <Redirect>. When a <Redirect> renders, it will navigate using its to prop.
+<Redirect to="/login" />
+```
+

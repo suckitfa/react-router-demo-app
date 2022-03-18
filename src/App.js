@@ -1,5 +1,6 @@
 import BasicRoute from './pages/BasicRoute';
 import NestRoute from './pages/NestRoute'
+import NestRouteTest from './pages/NestRouteTest';
 import './App.css';
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
     <div className="App">
       {/* <BasicRoute /> */}
       <hr />
-      <NestRoute />
+      {/* <NestRoute /> */}
+      <hr />
+      <NestRouteTest />
     </div>
   );
 }
